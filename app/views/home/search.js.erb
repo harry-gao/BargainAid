@@ -1,0 +1,3 @@
+var taobaoSearchUrl = "http://s8.taobao.com/search?commend=all&q=";
+taobaoSearchUrl = encodeURIComponent(taobaoSearchUrl + '<%= @term %>');
+$("#trans_area").attr('src','/home/get_translation?id=' + taobaoSearchUrl)

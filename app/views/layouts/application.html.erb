@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BargainAid - Your assistant to bargain in China</title>
+    <%= stylesheet_link_tag :all %>
+    <%= javascript_include_tag :all %>
+    <%= csrf_meta_tag %>
+    <%= yield(:header) if @content_for_header %>
+  </head>
+  <body>
+    <table width="100%">
+      <tr>
+        <td colspan="2" height="150px">
+          <div id="logo">
+            <h1><a href="#">Bargain Aid</a></h1>
+                <p> -- Your assistant to bargain in China</p>
+              </div>
+              <div id="menu">
+                <ul>
+                  <li class="current_page_item"><a href="/">Homepage</a></li>
+                  <li><a href="#">How to</a></li>
+                  <li><a href="#">Why us</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Links</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+        </td>
+      </tr>
+      <%= yield %>
+    </table>
+
+    <div id="footer">
+      <p>Copyright (c) 2011 BargainAid.com. All rights reserved.</p>
+    </div>
+  </body>
+</html>

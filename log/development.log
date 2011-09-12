@@ -1,0 +1,853 @@
+
+
+Started GET "/home/buy" for 127.0.0.1 at 2011-09-10 12:21:44 +1000
+  Processing by HomeController#buy as HTML
+Completed   in 2ms
+
+ActionView::MissingTemplate (Missing template home/buy with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "/Users/hgao/twwork/study/taobao/app/views"):
+  
+
+Rendered /Users/hgao/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home/buy" for 127.0.0.1 at 2011-09-10 12:21:59 +1000
+  Processing by HomeController#buy as HTML
+Rendered home/buy.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/test" for 127.0.0.1 at 2011-09-10 12:21:59 +1000
+  Processing by HomeController#test as HTML
+Rendered home/test.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/down.gif" for 127.0.0.1 at 2011-09-10 12:21:59 +1000
+
+ActionController::RoutingError (No route matches "/home/down.gif"):
+  
+
+Rendered /Users/hgao/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/home/get_price" for 127.0.0.1 at 2011-09-10 12:21:59 +1000
+  Processing by HomeController#get_price as JSON
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2011-09-10 12:23:26 +1000
+
+SyntaxError (/Users/hgao/twwork/study/taobao/app/controllers/home_controller.rb:125: syntax error, unexpected keyword_end, expecting $end):
+  
+
+Rendered /Users/hgao/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/hgao/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+Rendered /Users/hgao/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.4ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2011-09-10 12:23:38 +1000
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed   in 4ms
+
+ActionView::Template::Error (undefined method `gsub' for nil:NilClass):
+    8:         <ul>
+    9:           <li><a href="#">Clothes</a>
+    10:             <ul>
+    11:               <li><a href="/home/buy/?id=<%= CGI.escape(@bag_target) %>" onclick='setClass("result_area", "loading")'>Bags</a></li>
+    12:               <li><a href="/home/buy/?id=<%= CGI.escape(@shoe_target) %>" onclick='setClass("result_area", "loading")'>Clothes</a></li>
+    13:               <li><a href="#">Sub Item 1.3</a></li>
+    14:               <li><a href="#">Sub Item 1.4</a></li>
+  app/views/home/index.html.erb:11:in `_app_views_home_index_html_erb__4549047309257235738_2156641560__4205376341921026697'
+
+Rendered /Users/hgao/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/hgao/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.6ms)
+Rendered /Users/hgao/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.4ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2011-09-10 12:25:09 +1000
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2011-09-10 12:30:02 +1000
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2011-09-10 12:30:35 +1000
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/buy?id=http://list.taobao.com/browse/cat-0.htm" for 127.0.0.1 at 2011-09-10 12:30:42 +1000
+  Processing by HomeController#buy as HTML
+  Parameters: {"id"=>"http://list.taobao.com/browse/cat-0.htm"}
+Rendered home/buy.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 5ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/get_translation/?id=http%3A%2F%2Flist.taobao.com%2Fbrowse%2Fcat-0.htm" for 127.0.0.1 at 2011-09-10 12:30:42 +1000
+  Processing by HomeController#get_translation as HTML
+  Parameters: {"id"=>"http://list.taobao.com/browse/cat-0.htm"}
+Rendered inline template (123.7ms)
+Completed 200 OK in 8304ms (Views: 124.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/down.gif" for 127.0.0.1 at 2011-09-10 12:30:51 +1000
+
+ActionController::RoutingError (No route matches "/home/down.gif"):
+  
+
+Rendered /Users/hgao/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/home/wrap?id=http%3A%2F%2Ftranslate.googleusercontent.com%2Ftranslate_c%3Fhl%3Den%26amp%3Brurl%3Dtranslate.google.com%26amp%3Bsl%3Dzh-CN%26amp%3Btl%3Den%26amp%3Bu%3Dhttp%3A%2F%2Fju.atpanel.com%2F%253Furl%253Dhttp%3A%2F%2Flist.taobao.com%2Fmarket%2Ffashion.htm%253Fspm%253D1.47602.90737.4%2526cat%253D16%2526sort%253Dcoefp%2526random%253Dfalse%2526viewIndex%253D7%2526as%253D1%2526yp4p_page%253D0%2526commend%253Dall%2526style%253Dgrid%2526q%253D%2525C1%2525AC%2525D2%2525C2%2525BF%2525E3%2526ad_id%253D%2526am_id%253D%2526cm_id%253D%2526pm_id%253D15004282195dc5b3a872%26amp%3Busg%3DALkJrhgM0wIgfGpPlDjX0y-AQC3mjTRZlg%23ListView" for 127.0.0.1 at 2011-09-10 12:31:12 +1000
+  Processing by HomeController#wrap as HTML
+  Parameters: {"id"=>"http://translate.googleusercontent.com/translate_c?hl=en&amp;rurl=translate.google.com&amp;sl=zh-CN&amp;tl=en&amp;u=http://ju.atpanel.com/%3Furl%3Dhttp://list.taobao.com/market/fashion.htm%3Fspm%3D1.47602.90737.4%26cat%3D16%26sort%3Dcoefp%26random%3Dfalse%26viewIndex%3D7%26as%3D1%26yp4p_page%3D0%26commend%3Dall%26style%3Dgrid%26q%3D%25C1%25AC%25D2%25C2%25BF%25E3%26ad_id%3D%26am_id%3D%26cm_id%3D%26pm_id%3D15004282195dc5b3a872&amp;usg=ALkJrhgM0wIgfGpPlDjX0y-AQC3mjTRZlg#ListView"}
+Rendered inline template (36.4ms)
+Completed 200 OK in 4836ms (Views: 37.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/wrap?id=http%3A%2F%2Ftranslate.googleusercontent.com%2Ftranslate_c%3Fhl%3Den%26amp%3Brurl%3Dtranslate.google.com%26amp%3Bsl%3Dzh-CN%26amp%3Btl%3Den%26amp%3Bu%3Dhttp%3A%2F%2Fitem.taobao.com%2Fitem.htm%253Fid%253D1475392086%2526cm_cat%253D16%2526pm2%253D1%26amp%3Busg%3DALkJrhgQjofhyRDUdm80wAuQq59fFHXoDA" for 127.0.0.1 at 2011-09-10 12:31:27 +1000
+  Processing by HomeController#wrap as HTML
+  Parameters: {"id"=>"http://translate.googleusercontent.com/translate_c?hl=en&amp;rurl=translate.google.com&amp;sl=zh-CN&amp;tl=en&amp;u=http://item.taobao.com/item.htm%3Fid%3D1475392086%26cm_cat%3D16%26pm2%3D1&amp;usg=ALkJrhgQjofhyRDUdm80wAuQq59fFHXoDA"}
+Rendered inline template (16.0ms)
+Completed 200 OK in 3488ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/get_price" for 127.0.0.1 at 2011-09-10 12:31:38 +1000
+  Processing by HomeController#get_price as JSON
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/buy?id=http://list.taobao.com/browse/cat-0.htm" for 127.0.0.1 at 2011-09-10 12:32:35 +1000
+  Processing by HomeController#buy as HTML
+  Parameters: {"id"=>"http://list.taobao.com/browse/cat-0.htm"}
+Rendered home/buy.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/get_translation/?id=http%3A%2F%2Flist.taobao.com%2Fbrowse%2Fcat-0.htm" for 127.0.0.1 at 2011-09-10 12:32:35 +1000
+  Processing by HomeController#get_translation as HTML
+  Parameters: {"id"=>"http://list.taobao.com/browse/cat-0.htm"}
+Rendered inline template (98.9ms)
+Completed 200 OK in 13751ms (Views: 99.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/down.gif" for 127.0.0.1 at 2011-09-10 12:32:49 +1000
+
+ActionController::RoutingError (No route matches "/home/down.gif"):
+  
+
+Rendered /Users/hgao/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/home/get_price" for 127.0.0.1 at 2011-09-10 12:32:51 +1000
+  Processing by HomeController#get_price as JSON
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2011-09-10 12:33:12 +1000
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-09-10 12:33:56 +1000
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 7ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-09-10 12:33:57 +1000
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-09-10 12:34:33 +1000
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-09-10 12:35:05 +1000
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/buy?id=http://list.taobao.com/browse/cat-0.htm" for 127.0.0.1 at 2011-09-10 12:35:07 +1000
+  Processing by HomeController#buy as HTML
+  Parameters: {"id"=>"http://list.taobao.com/browse/cat-0.htm"}
+Rendered home/buy.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/get_translation/?id=http%3A%2F%2Flist.taobao.com%2Fbrowse%2Fcat-0.htm" for 127.0.0.1 at 2011-09-10 12:35:07 +1000
+  Processing by HomeController#get_translation as HTML
+  Parameters: {"id"=>"http://list.taobao.com/browse/cat-0.htm"}
+Rendered inline template (97.5ms)
+Completed 200 OK in 17065ms (Views: 98.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/down.gif" for 127.0.0.1 at 2011-09-10 12:35:24 +1000
+
+ActionController::RoutingError (No route matches "/home/down.gif"):
+  
+
+Rendered /Users/hgao/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/home/get_price" for 127.0.0.1 at 2011-09-10 12:36:24 +1000
+  Processing by HomeController#get_price as HTML
+Completed   in 2ms
+
+ActionView::MissingTemplate (Missing template home/get_price with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "/Users/hgao/twwork/study/taobao/app/views"):
+  app/controllers/home_controller.rb:113:in `get_price'
+
+Rendered /Users/hgao/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.6ms)
+
+
+Started GET "/home/wrap?id=http%3A%2F%2Ftranslate.googleusercontent.com%2Ftranslate_c%3Fhl%3Den%26amp%3Brurl%3Dtranslate.google.com%26amp%3Bsl%3Dzh-CN%26amp%3Btl%3Den%26amp%3Bu%3Dhttp%3A%2F%2Fju.atpanel.com%2F%253Furl%253Dhttp%3A%2F%2Flist.taobao.com%2Fmarket%2Fjiadian.htm%253Fspm%253D1.47618.90755.85%2526atype%253Db%2526cat%253D50018908%2526sort%253Dcoefp%2526style%253Dgrid%2526random%253Dfalse%2526viewIndex%253D7%2526isnew%253D2%2526yp4p_page%253D0%2526commend%253Dall%2526ad_id%253D%2526am_id%253D%2526cm_id%253D%2526pm_id%253D1500428225b62e5d9519%26amp%3Busg%3DALkJrhiDS3FdQeTVC16qn3TOqTRkhwuSrg%23ListView" for 127.0.0.1 at 2011-09-10 12:45:22 +1000
+  Processing by HomeController#wrap as HTML
+  Parameters: {"id"=>"http://translate.googleusercontent.com/translate_c?hl=en&amp;rurl=translate.google.com&amp;sl=zh-CN&amp;tl=en&amp;u=http://ju.atpanel.com/%3Furl%3Dhttp://list.taobao.com/market/jiadian.htm%3Fspm%3D1.47618.90755.85%26atype%3Db%26cat%3D50018908%26sort%3Dcoefp%26style%3Dgrid%26random%3Dfalse%26viewIndex%3D7%26isnew%3D2%26yp4p_page%3D0%26commend%3Dall%26ad_id%3D%26am_id%3D%26cm_id%3D%26pm_id%3D1500428225b62e5d9519&amp;usg=ALkJrhiDS3FdQeTVC16qn3TOqTRkhwuSrg#ListView"}
+Rendered inline template (16.1ms)
+Completed 200 OK in 4078ms (Views: 16.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/get_price" for 127.0.0.1 at 2011-09-10 12:45:28 +1000
+  Processing by HomeController#get_price as JSON
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/buy?id=http://list.taobao.com/browse/cat-0.htm" for 127.0.0.1 at 2011-09-10 12:46:47 +1000
+  Processing by HomeController#buy as HTML
+  Parameters: {"id"=>"http://list.taobao.com/browse/cat-0.htm"}
+Rendered home/buy.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/get_translation/?id=http%3A%2F%2Flist.taobao.com%2Fbrowse%2Fcat-0.htm" for 127.0.0.1 at 2011-09-10 12:46:47 +1000
+  Processing by HomeController#get_translation as HTML
+  Parameters: {"id"=>"http://list.taobao.com/browse/cat-0.htm"}
+Rendered inline template (98.9ms)
+Completed 200 OK in 14973ms (Views: 99.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/down.gif" for 127.0.0.1 at 2011-09-10 12:47:02 +1000
+
+ActionController::RoutingError (No route matches "/home/down.gif"):
+  
+
+Rendered /Users/hgao/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/home/get_price" for 127.0.0.1 at 2011-09-10 12:47:04 +1000
+  Processing by HomeController#get_price as JSON
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/buy?id=http://list.taobao.com/browse/cat-0.htm" for 127.0.0.1 at 2011-09-10 12:48:56 +1000
+  Processing by HomeController#buy as HTML
+  Parameters: {"id"=>"http://list.taobao.com/browse/cat-0.htm"}
+Rendered home/buy.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/images/left.png" for 127.0.0.1 at 2011-09-10 12:48:56 +1000
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /Users/hgao/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.6ms)
+
+
+Started GET "/home/images/left.png" for 127.0.0.1 at 2011-09-10 12:48:56 +1000
+
+AbstractController::ActionNotFound (The action 'images' could not be found for HomeController):
+  
+
+Rendered /Users/hgao/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.6ms)
+
+
+Started GET "/home/get_translation/?id=http%3A%2F%2Flist.taobao.com%2Fbrowse%2Fcat-0.htm" for 127.0.0.1 at 2011-09-10 12:48:57 +1000
+  Processing by HomeController#get_translation as HTML
+  Parameters: {"id"=>"http://list.taobao.com/browse/cat-0.htm"}
+Rendered inline template (122.0ms)
+Completed 200 OK in 19688ms (Views: 122.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/down.gif" for 127.0.0.1 at 2011-09-10 12:49:16 +1000
+
+ActionController::RoutingError (No route matches "/home/down.gif"):
+  
+
+Rendered /Users/hgao/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/home/buy?id=http://list.taobao.com/browse/cat-0.htm" for 127.0.0.1 at 2011-09-10 12:49:20 +1000
+  Processing by HomeController#buy as HTML
+  Parameters: {"id"=>"http://list.taobao.com/browse/cat-0.htm"}
+Rendered home/buy.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/get_translation/?id=http%3A%2F%2Flist.taobao.com%2Fbrowse%2Fcat-0.htm" for 127.0.0.1 at 2011-09-10 12:49:20 +1000
+  Processing by HomeController#get_translation as HTML
+  Parameters: {"id"=>"http://list.taobao.com/browse/cat-0.htm"}
+Rendered inline template (99.4ms)
+Completed 200 OK in 15840ms (Views: 100.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/down.gif" for 127.0.0.1 at 2011-09-10 12:49:36 +1000
+
+ActionController::RoutingError (No route matches "/home/down.gif"):
+  
+
+Rendered /Users/hgao/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/home/get_price" for 127.0.0.1 at 2011-09-10 12:49:37 +1000
+  Processing by HomeController#get_price as JSON
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/buy?id=http://list.taobao.com/browse/cat-0.htm" for 127.0.0.1 at 2011-09-10 12:50:26 +1000
+  Processing by HomeController#buy as HTML
+  Parameters: {"id"=>"http://list.taobao.com/browse/cat-0.htm"}
+Rendered home/buy.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/get_translation/?id=http%3A%2F%2Flist.taobao.com%2Fbrowse%2Fcat-0.htm" for 127.0.0.1 at 2011-09-10 12:50:26 +1000
+  Processing by HomeController#get_translation as HTML
+  Parameters: {"id"=>"http://list.taobao.com/browse/cat-0.htm"}
+Rendered inline template (106.4ms)
+Completed 200 OK in 13554ms (Views: 107.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/down.gif" for 127.0.0.1 at 2011-09-10 12:50:40 +1000
+
+ActionController::RoutingError (No route matches "/home/down.gif"):
+  
+
+Rendered /Users/hgao/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/home/get_price" for 127.0.0.1 at 2011-09-10 12:50:41 +1000
+  Processing by HomeController#get_price as JSON
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/buy?id=http://list.taobao.com/browse/cat-0.htm" for 127.0.0.1 at 2011-09-10 12:50:46 +1000
+  Processing by HomeController#buy as HTML
+  Parameters: {"id"=>"http://list.taobao.com/browse/cat-0.htm"}
+Rendered home/buy.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/get_translation/?id=http%3A%2F%2Flist.taobao.com%2Fbrowse%2Fcat-0.htm" for 127.0.0.1 at 2011-09-10 12:50:46 +1000
+  Processing by HomeController#get_translation as HTML
+  Parameters: {"id"=>"http://list.taobao.com/browse/cat-0.htm"}
+Rendered inline template (80.3ms)
+Completed 200 OK in 18716ms (Views: 81.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/down.gif" for 127.0.0.1 at 2011-09-10 12:51:05 +1000
+
+ActionController::RoutingError (No route matches "/home/down.gif"):
+  
+
+Rendered /Users/hgao/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/home/get_price" for 127.0.0.1 at 2011-09-10 12:51:06 +1000
+  Processing by HomeController#get_price as JSON
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/buy?id=http://list.taobao.com/browse/cat-0.htm" for 127.0.0.1 at 2011-09-10 12:52:20 +1000
+  Processing by HomeController#buy as HTML
+  Parameters: {"id"=>"http://list.taobao.com/browse/cat-0.htm"}
+Rendered home/buy.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/get_translation/?id=http%3A%2F%2Flist.taobao.com%2Fbrowse%2Fcat-0.htm" for 127.0.0.1 at 2011-09-10 12:52:20 +1000
+  Processing by HomeController#get_translation as HTML
+  Parameters: {"id"=>"http://list.taobao.com/browse/cat-0.htm"}
+Rendered inline template (87.8ms)
+Completed 200 OK in 15799ms (Views: 88.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/down.gif" for 127.0.0.1 at 2011-09-10 12:52:36 +1000
+
+ActionController::RoutingError (No route matches "/home/down.gif"):
+  
+
+Rendered /Users/hgao/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/home/get_price" for 127.0.0.1 at 2011-09-10 12:52:37 +1000
+  Processing by HomeController#get_price as JSON
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/buy?id=http://list.taobao.com/browse/cat-0.htm" for 127.0.0.1 at 2011-09-10 12:54:01 +1000
+  Processing by HomeController#buy as HTML
+  Parameters: {"id"=>"http://list.taobao.com/browse/cat-0.htm"}
+Rendered home/buy.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 8ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/get_translation/?id=http%3A%2F%2Flist.taobao.com%2Fbrowse%2Fcat-0.htm" for 127.0.0.1 at 2011-09-10 12:54:01 +1000
+  Processing by HomeController#get_translation as HTML
+  Parameters: {"id"=>"http://list.taobao.com/browse/cat-0.htm"}
+Rendered inline template (102.2ms)
+Completed 200 OK in 14875ms (Views: 103.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/down.gif" for 127.0.0.1 at 2011-09-10 12:54:16 +1000
+
+ActionController::RoutingError (No route matches "/home/down.gif"):
+  
+
+Rendered /Users/hgao/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/home/get_price" for 127.0.0.1 at 2011-09-10 12:54:17 +1000
+  Processing by HomeController#get_price as JSON
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/buy?id=http://list.taobao.com/browse/cat-0.htm" for 127.0.0.1 at 2011-09-10 12:54:18 +1000
+  Processing by HomeController#buy as HTML
+  Parameters: {"id"=>"http://list.taobao.com/browse/cat-0.htm"}
+Rendered home/buy.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/get_translation/?id=http%3A%2F%2Flist.taobao.com%2Fbrowse%2Fcat-0.htm" for 127.0.0.1 at 2011-09-10 12:54:19 +1000
+  Processing by HomeController#get_translation as HTML
+  Parameters: {"id"=>"http://list.taobao.com/browse/cat-0.htm"}
+Rendered inline template (107.6ms)
+Completed 200 OK in 19693ms (Views: 108.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/down.gif" for 127.0.0.1 at 2011-09-10 12:54:38 +1000
+
+ActionController::RoutingError (No route matches "/home/down.gif"):
+  
+
+Rendered /Users/hgao/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/home/get_price" for 127.0.0.1 at 2011-09-10 12:54:40 +1000
+  Processing by HomeController#get_price as JSON
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/buy?id=http://list.taobao.com/browse/cat-0.htm" for 127.0.0.1 at 2011-09-10 12:54:43 +1000
+  Processing by HomeController#buy as HTML
+  Parameters: {"id"=>"http://list.taobao.com/browse/cat-0.htm"}
+Rendered home/buy.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/get_translation/?id=http%3A%2F%2Flist.taobao.com%2Fbrowse%2Fcat-0.htm" for 127.0.0.1 at 2011-09-10 12:54:43 +1000
+  Processing by HomeController#get_translation as HTML
+  Parameters: {"id"=>"http://list.taobao.com/browse/cat-0.htm"}
+Rendered inline template (82.4ms)
+Completed 200 OK in 14836ms (Views: 83.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/down.gif" for 127.0.0.1 at 2011-09-10 12:54:58 +1000
+
+ActionController::RoutingError (No route matches "/home/down.gif"):
+  
+
+Rendered /Users/hgao/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/home/get_price" for 127.0.0.1 at 2011-09-10 12:55:00 +1000
+  Processing by HomeController#get_price as JSON
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/buy?id=http://list.taobao.com/browse/cat-0.htm" for 127.0.0.1 at 2011-09-10 12:56:19 +1000
+  Processing by HomeController#buy as HTML
+  Parameters: {"id"=>"http://list.taobao.com/browse/cat-0.htm"}
+Rendered home/buy.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/get_translation/?id=http%3A%2F%2Flist.taobao.com%2Fbrowse%2Fcat-0.htm" for 127.0.0.1 at 2011-09-10 12:56:20 +1000
+  Processing by HomeController#get_translation as HTML
+  Parameters: {"id"=>"http://list.taobao.com/browse/cat-0.htm"}
+Rendered inline template (75.2ms)
+Completed 200 OK in 8856ms (Views: 76.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/down.gif" for 127.0.0.1 at 2011-09-10 12:56:29 +1000
+
+ActionController::RoutingError (No route matches "/home/down.gif"):
+  
+
+Rendered /Users/hgao/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/home/get_price" for 127.0.0.1 at 2011-09-10 12:56:30 +1000
+  Processing by HomeController#get_price as JSON
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/buy?id=http://list.taobao.com/browse/cat-0.htm" for 127.0.0.1 at 2011-09-10 12:56:33 +1000
+  Processing by HomeController#buy as HTML
+  Parameters: {"id"=>"http://list.taobao.com/browse/cat-0.htm"}
+Rendered home/buy.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/get_translation/?id=http%3A%2F%2Flist.taobao.com%2Fbrowse%2Fcat-0.htm" for 127.0.0.1 at 2011-09-10 12:56:33 +1000
+  Processing by HomeController#get_translation as HTML
+  Parameters: {"id"=>"http://list.taobao.com/browse/cat-0.htm"}
+Rendered inline template (89.1ms)
+Completed 200 OK in 8787ms (Views: 90.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/down.gif" for 127.0.0.1 at 2011-09-10 12:56:42 +1000
+
+ActionController::RoutingError (No route matches "/home/down.gif"):
+  
+
+Rendered /Users/hgao/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/home/get_price" for 127.0.0.1 at 2011-09-10 12:56:46 +1000
+  Processing by HomeController#get_price as JSON
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/buy?id=http://list.taobao.com/browse/cat-0.htm" for 127.0.0.1 at 2011-09-10 13:03:16 +1000
+  Processing by HomeController#buy as HTML
+  Parameters: {"id"=>"http://list.taobao.com/browse/cat-0.htm"}
+Rendered home/buy.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/get_translation/?id=http%3A%2F%2Flist.taobao.com%2Fbrowse%2Fcat-0.htm" for 127.0.0.1 at 2011-09-10 13:03:17 +1000
+  Processing by HomeController#get_translation as HTML
+  Parameters: {"id"=>"http://list.taobao.com/browse/cat-0.htm"}
+Rendered inline template (86.3ms)
+Completed 200 OK in 17634ms (Views: 87.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/down.gif" for 127.0.0.1 at 2011-09-10 13:03:34 +1000
+
+ActionController::RoutingError (No route matches "/home/down.gif"):
+  
+
+Rendered /Users/hgao/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/home/wrap?id=http%3A%2F%2Ftranslate.googleusercontent.com%2Ftranslate_c%3Fhl%3Den%26amp%3Brurl%3Dtranslate.google.com%26amp%3Bsl%3Dzh-CN%26amp%3Btl%3Den%26amp%3Bu%3Dhttp%3A%2F%2Fju.atpanel.com%2F%253Furl%253Dhttp%3A%2F%2Flist.taobao.com%2Fmarket%2Fxuni.htm%253Fspm%253D1.47559.90621.4%2526cat%253D50004958%2526sort%253Dcoefp%2526random%253Dfalse%2526viewIndex%253D7%2526yp4p_page%253D0%2526commend%253Dall%2526ptdc%253D1%2526smc%253D1%2526mSelect%253Dfalse%2526ad_id%253D%2526am_id%253D%2526cm_id%253D%2526pm_id%253D1500428252b938486a73%26amp%3Busg%3DALkJrhiK6D48pdKK1P91ycGympl1cn2dog%23ListView" for 127.0.0.1 at 2011-09-10 13:04:14 +1000
+  Processing by HomeController#wrap as HTML
+  Parameters: {"id"=>"http://translate.googleusercontent.com/translate_c?hl=en&amp;rurl=translate.google.com&amp;sl=zh-CN&amp;tl=en&amp;u=http://ju.atpanel.com/%3Furl%3Dhttp://list.taobao.com/market/xuni.htm%3Fspm%3D1.47559.90621.4%26cat%3D50004958%26sort%3Dcoefp%26random%3Dfalse%26viewIndex%3D7%26yp4p_page%3D0%26commend%3Dall%26ptdc%3D1%26smc%3D1%26mSelect%3Dfalse%26ad_id%3D%26am_id%3D%26cm_id%3D%26pm_id%3D1500428252b938486a73&amp;usg=ALkJrhiK6D48pdKK1P91ycGympl1cn2dog#ListView"}
+Rendered inline template (14.5ms)
+Completed 200 OK in 4693ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/wrap?id=http%3A%2F%2Ftranslate.googleusercontent.com%2Ftranslate_c%3Fhl%3Den%26amp%3Brurl%3Dtranslate.google.com%26amp%3Bsl%3Dzh-CN%26amp%3Btl%3Den%26amp%3Bu%3Dhttp%3A%2F%2Fju.atpanel.com%2F%253Furl%253Dhttp%3A%2F%2Flist.taobao.com%2Fmarket%2F3c.htm%253Fspm%253D1.47600.90736.7%2526atype%253Db%2526cat%253D1512%2526sort%253Dcoefp%2526style%253Dgrid%2526random%253Dfalse%2526ppath%253D20000%3A10123%2526viewIndex%253D7%2526isnew%253D%2526yp4p_page%253D0%2526commend%253Dall%2526ad_id%253D%2526am_id%253D%2526cm_id%253D%2526pm_id%253D1500428221407115d0b1%26amp%3Busg%3DALkJrhiC6xZCAcLJZTatcnkVHPUgZ-3-vA" for 127.0.0.1 at 2011-09-10 13:04:20 +1000
+  Processing by HomeController#wrap as HTML
+  Parameters: {"id"=>"http://translate.googleusercontent.com/translate_c?hl=en&amp;rurl=translate.google.com&amp;sl=zh-CN&amp;tl=en&amp;u=http://ju.atpanel.com/%3Furl%3Dhttp://list.taobao.com/market/3c.htm%3Fspm%3D1.47600.90736.7%26atype%3Db%26cat%3D1512%26sort%3Dcoefp%26style%3Dgrid%26random%3Dfalse%26ppath%3D20000:10123%26viewIndex%3D7%26isnew%3D%26yp4p_page%3D0%26commend%3Dall%26ad_id%3D%26am_id%3D%26cm_id%3D%26pm_id%3D1500428221407115d0b1&amp;usg=ALkJrhiC6xZCAcLJZTatcnkVHPUgZ-3-vA"}
+Rendered inline template (25.5ms)
+Completed 200 OK in 5685ms (Views: 26.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/get_price" for 127.0.0.1 at 2011-09-10 13:04:35 +1000
+  Processing by HomeController#get_price as JSON
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/buy" for 127.0.0.1 at 2011-09-10 13:05:25 +1000
+  Processing by HomeController#buy as HTML
+Rendered home/buy.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/test" for 127.0.0.1 at 2011-09-10 13:05:26 +1000
+  Processing by HomeController#test as HTML
+Rendered home/test.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/down.gif" for 127.0.0.1 at 2011-09-10 13:05:26 +1000
+
+ActionController::RoutingError (No route matches "/home/down.gif"):
+  
+
+Rendered /Users/hgao/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (26.0ms)
+
+
+Started GET "/home/get_price" for 127.0.0.1 at 2011-09-10 13:05:26 +1000
+  Processing by HomeController#get_price as JSON
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/buy" for 127.0.0.1 at 2011-09-10 13:05:53 +1000
+  Processing by HomeController#buy as HTML
+Rendered home/buy.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/test" for 127.0.0.1 at 2011-09-10 13:05:53 +1000
+  Processing by HomeController#test as HTML
+Rendered home/test.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/down.gif" for 127.0.0.1 at 2011-09-10 13:05:53 +1000
+
+ActionController::RoutingError (No route matches "/home/down.gif"):
+  
+
+Rendered /Users/hgao/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/home/get_price" for 127.0.0.1 at 2011-09-10 13:05:53 +1000
+  Processing by HomeController#get_price as JSON
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/buy" for 127.0.0.1 at 2011-09-10 13:06:17 +1000
+  Processing by HomeController#buy as HTML
+Rendered home/buy.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/test" for 127.0.0.1 at 2011-09-10 13:06:17 +1000
+  Processing by HomeController#test as HTML
+Rendered home/test.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 11ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/down.gif" for 127.0.0.1 at 2011-09-10 13:06:17 +1000
+
+ActionController::RoutingError (No route matches "/home/down.gif"):
+  
+
+Rendered /Users/hgao/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/home/get_price" for 127.0.0.1 at 2011-09-10 13:06:17 +1000
+  Processing by HomeController#get_price as JSON
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/buy" for 127.0.0.1 at 2011-09-10 13:07:37 +1000
+  Processing by HomeController#buy as HTML
+Rendered home/buy.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/test" for 127.0.0.1 at 2011-09-10 13:07:37 +1000
+  Processing by HomeController#test as HTML
+Rendered home/test.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/down.gif" for 127.0.0.1 at 2011-09-10 13:07:37 +1000
+
+ActionController::RoutingError (No route matches "/home/down.gif"):
+  
+
+Rendered /Users/hgao/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/home/get_price" for 127.0.0.1 at 2011-09-10 13:07:37 +1000
+  Processing by HomeController#get_price as JSON
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/buy" for 127.0.0.1 at 2011-09-10 13:08:10 +1000
+  Processing by HomeController#buy as HTML
+Rendered home/buy.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 8ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/test" for 127.0.0.1 at 2011-09-10 13:08:10 +1000
+  Processing by HomeController#test as HTML
+Rendered home/test.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/down.gif" for 127.0.0.1 at 2011-09-10 13:08:10 +1000
+
+ActionController::RoutingError (No route matches "/home/down.gif"):
+  
+
+Rendered /Users/hgao/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/home/get_price" for 127.0.0.1 at 2011-09-10 13:08:10 +1000
+  Processing by HomeController#get_price as JSON
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/buy" for 127.0.0.1 at 2011-09-10 13:08:26 +1000
+  Processing by HomeController#buy as HTML
+Rendered home/buy.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/test" for 127.0.0.1 at 2011-09-10 13:08:26 +1000
+  Processing by HomeController#test as HTML
+Rendered home/test.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/down.gif" for 127.0.0.1 at 2011-09-10 13:08:26 +1000
+
+ActionController::RoutingError (No route matches "/home/down.gif"):
+  
+
+Rendered /Users/hgao/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/home/get_price" for 127.0.0.1 at 2011-09-10 13:08:27 +1000
+  Processing by HomeController#get_price as JSON
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/buy" for 127.0.0.1 at 2011-09-10 13:08:45 +1000
+  Processing by HomeController#buy as HTML
+Rendered home/buy.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 7ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/test" for 127.0.0.1 at 2011-09-10 13:08:45 +1000
+  Processing by HomeController#test as HTML
+Rendered home/test.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/down.gif" for 127.0.0.1 at 2011-09-10 13:08:45 +1000
+
+ActionController::RoutingError (No route matches "/home/down.gif"):
+  
+
+Rendered /Users/hgao/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/home/get_price" for 127.0.0.1 at 2011-09-10 13:08:45 +1000
+  Processing by HomeController#get_price as JSON
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/buy" for 127.0.0.1 at 2011-09-11 10:23:12 +1000
+  Processing by HomeController#buy as HTML
+Rendered home/buy.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/test" for 127.0.0.1 at 2011-09-11 10:23:12 +1000
+  Processing by HomeController#test as HTML
+Rendered home/test.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/down.gif" for 127.0.0.1 at 2011-09-11 10:23:12 +1000
+
+ActionController::RoutingError (No route matches "/home/down.gif"):
+  
+
+Rendered /Users/hgao/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/home/get_price" for 127.0.0.1 at 2011-09-11 10:23:13 +1000
+  Processing by HomeController#get_price as JSON
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-09-11 10:23:18 +1000
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/buy?id=http://list.taobao.com/browse/cat-0.htm" for 127.0.0.1 at 2011-09-11 10:23:21 +1000
+  Processing by HomeController#buy as HTML
+  Parameters: {"id"=>"http://list.taobao.com/browse/cat-0.htm"}
+Rendered home/buy.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/get_translation/?id=http%3A%2F%2Flist.taobao.com%2Fbrowse%2Fcat-0.htm" for 127.0.0.1 at 2011-09-11 10:23:21 +1000
+  Processing by HomeController#get_translation as HTML
+  Parameters: {"id"=>"http://list.taobao.com/browse/cat-0.htm"}
+Rendered inline template (94.9ms)
+Completed 200 OK in 7738ms (Views: 95.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/down.gif" for 127.0.0.1 at 2011-09-11 10:23:29 +1000
+
+ActionController::RoutingError (No route matches "/home/down.gif"):
+  
+
+Rendered /Users/hgao/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.9ms)
+
+
+Started GET "/home/wrap?id=http%3A%2F%2Ftranslate.googleusercontent.com%2Ftranslate_c%3Fhl%3Den%26amp%3Brurl%3Dtranslate.google.com%26amp%3Bsl%3Dzh-CN%26amp%3Btl%3Den%26amp%3Bu%3Dhttp%3A%2F%2Fju.atpanel.com%2F%253Furl%253Dhttp%3A%2F%2Flist.taobao.com%2Fmarket%2Fbao.htm%253Fspm%253D1.47614.90751.3%2526promoted_service4%253D4%2526cat%253D50072764%2526ratesum%253D6%25252C7%25252C8%25252C9%25252C10%25252C11%25252C12%25252C13%25252C14%25252C15%25252C16%25252C17%25252C18%25252C19%25252C20%2526sort%253Dcoefp%2526isprepay%253D1%2526random%253Dfalse%2526viewIndex%253D7%2526yp4p_page%253D0%2526commend%253Dall%2526style%253Dgrid%2526olu%253Dyes%2526smc%253D1%2526mSelect%253Dfalse%2526ad_id%253D%2526am_id%253D%2526cm_id%253D%2526pm_id%253D150042825709e33da7d7%26amp%3Busg%3DALkJrhgN17gGWKHlDD7mC2mZuSerQzltFg%23ListView" for 127.0.0.1 at 2011-09-11 10:24:28 +1000
+  Processing by HomeController#wrap as HTML
+  Parameters: {"id"=>"http://translate.googleusercontent.com/translate_c?hl=en&amp;rurl=translate.google.com&amp;sl=zh-CN&amp;tl=en&amp;u=http://ju.atpanel.com/%3Furl%3Dhttp://list.taobao.com/market/bao.htm%3Fspm%3D1.47614.90751.3%26promoted_service4%3D4%26cat%3D50072764%26ratesum%3D6%252C7%252C8%252C9%252C10%252C11%252C12%252C13%252C14%252C15%252C16%252C17%252C18%252C19%252C20%26sort%3Dcoefp%26isprepay%3D1%26random%3Dfalse%26viewIndex%3D7%26yp4p_page%3D0%26commend%3Dall%26style%3Dgrid%26olu%3Dyes%26smc%3D1%26mSelect%3Dfalse%26ad_id%3D%26am_id%3D%26cm_id%3D%26pm_id%3D150042825709e33da7d7&amp;usg=ALkJrhgN17gGWKHlDD7mC2mZuSerQzltFg#ListView"}
+Rendered inline template (28.5ms)
+Completed 200 OK in 6690ms (Views: 29.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/get_price" for 127.0.0.1 at 2011-09-11 10:24:40 +1000
+  Processing by HomeController#get_price as JSON
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/wrap?id=http%3A%2F%2Ftranslate.googleusercontent.com%2Ftranslate_c%3Fhl%3Den%26amp%3Brurl%3Dtranslate.google.com%26amp%3Bsl%3Dzh-CN%26amp%3Btl%3Den%26amp%3Bu%3Dhttp%3A%2F%2Fitem.taobao.com%2Fitem.htm%253Fid%253D9524695920%2526cm_cat%253D50072764%26amp%3Busg%3DALkJrhhpawsyvXq63JUB8B8GiBcpJpd5dg" for 127.0.0.1 at 2011-09-11 10:25:20 +1000
+  Processing by HomeController#wrap as HTML
+  Parameters: {"id"=>"http://translate.googleusercontent.com/translate_c?hl=en&amp;rurl=translate.google.com&amp;sl=zh-CN&amp;tl=en&amp;u=http://item.taobao.com/item.htm%3Fid%3D9524695920%26cm_cat%3D50072764&amp;usg=ALkJrhhpawsyvXq63JUB8B8GiBcpJpd5dg"}
+Rendered inline template (8.6ms)
+Completed 200 OK in 2784ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/get_price" for 127.0.0.1 at 2011-09-11 10:25:45 +1000
+  Processing by HomeController#get_price as HTML
+Completed   in 3ms
+
+ActionView::MissingTemplate (Missing template home/get_price with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "/Users/hgao/twwork/study/taobao/app/views"):
+  app/controllers/home_controller.rb:113:in `get_price'
+
+Rendered /Users/hgao/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.9ms)
+
+
+Started GET "/home/get_price" for 127.0.0.1 at 2011-09-11 10:25:56 +1000
+  Processing by HomeController#get_price as JSON
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/get_price" for 127.0.0.1 at 2011-09-11 10:26:16 +1000
+  Processing by HomeController#get_price as JSON
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/wrap?id=http%3A%2F%2Ftranslate.googleusercontent.com%2Ftranslate_c%3Fhl%3Den%26amp%3Brurl%3Dtranslate.google.com%26amp%3Bsl%3Dzh-CN%26amp%3Btl%3Den%26amp%3Bu%3Dhttp%3A%2F%2Fitem.taobao.com%2Fitem.htm%253Fid%253D8857314136%26amp%3Busg%3DALkJrhjZetnWxeWXZ9lxFbQllnEeVkWNbg" for 127.0.0.1 at 2011-09-11 10:26:47 +1000
+  Processing by HomeController#wrap as HTML
+  Parameters: {"id"=>"http://translate.googleusercontent.com/translate_c?hl=en&amp;rurl=translate.google.com&amp;sl=zh-CN&amp;tl=en&amp;u=http://item.taobao.com/item.htm%3Fid%3D8857314136&amp;usg=ALkJrhjZetnWxeWXZ9lxFbQllnEeVkWNbg"}
+Rendered inline template (7.7ms)
+Completed 200 OK in 2674ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/get_price" for 127.0.0.1 at 2011-09-11 10:27:02 +1000
+  Processing by HomeController#get_price as JSON
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)

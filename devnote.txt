@@ -1,0 +1,6 @@
+1. need to install jquery driver to use jquery
+	gem install jquery-rails
+	change gemfile:  gem "jquery-rails"
+	run: rails generate jquery:install
+	js files "jquery.js", "jquery.min.js" and "jquery_ujs.js" will be generated in the public folder
+	jquery_ujs.js is the driver
